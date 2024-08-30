@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 pandas
 matplotlib
 joblib
 streamlit
-=======
-pandas
-matplotlib
-joblib
-streamlit
->>>>>>> b89e8c49561399bcf7010b02fe47530b73952c59
+
