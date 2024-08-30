@@ -64,8 +64,8 @@ if st.button("Submit"):
     # Separate numeric features for standardization
     numeric_df = combined_df[numeric_columns]
     # Standardizing all numeric features
-    #scaler = joblib.load('model/scaler.pkl')
-    scaler = joblib.load('streamlit/model/scaler.pkl')
+    scaler = joblib.load('model/scaler.pkl')
+    #scaler = joblib.load('streamlit/model/scaler.pkl')
 
     standardized_numeric_values = scaler.transform(numeric_df)
     # Update the combined_inputs dictionary with standardized numeric values
@@ -83,8 +83,8 @@ if st.button("Submit"):
                             'luxury_assets_value',
                             'residential_assets_value'], axis=1)
     # Load the pre-trained model and make prediction
-    #loaded_rf_clf = joblib.load('model/random_forest_classifier.pkl')
-    loaded_rf_clf = joblib.load('streamlit/model/random_forest_classifier.pkl')
+    loaded_rf_clf = joblib.load('model/random_forest_classifier.pkl')
+    #loaded_rf_clf = joblib.load('streamlit/model/random_forest_classifier.pkl')
 
     prediction = loaded_rf_clf.predict(input_df)
 
