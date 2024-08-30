@@ -4,3 +4,5 @@ Scripts
 share
 pyvenv.cfg
 etc
+streamlit
+.devcontainer
