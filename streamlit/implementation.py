@@ -3,9 +3,9 @@ import joblib
 import pandas as pd
 
 # loading the pretrained model
-loaded_rf_clf = joblib.load('./model/random_forest_classifier.pkl')
+loaded_rf_clf = joblib.load('./random_forest_classifier.pkl')
 # Standardizing all numeric features
-scaler = joblib.load('./model/scaler.pkl')
+scaler = joblib.load('./scaler.pkl')
 
 def main():
     # Define the numeric and categorical columns
