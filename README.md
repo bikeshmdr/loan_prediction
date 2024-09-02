@@ -5,24 +5,24 @@
     <ol>
         <li>Firstly presence of null value is checked in the dataset.<br>
             <p>
-            <img src= "documentation\images\data_cleaning\null_check.png" alt = "Null value checking" width = "200"><br>
+            <img src= "documentation\images\data_cleaning\null_check.png" alt = "Null value checking" width = "500"><br>
             Then, during feature selection error occurred as visualized below the colum names contained prefix white space which was removed using string strip<br>
-            <img src= "documentation\images\data_cleaning\column_index.png" alt = "Column name checking" width = "200">
+            <img src= "documentation\images\data_cleaning\column_index.png" alt = "Column name checking" width = "500">
             </p>
         </li>
         <li>Normality Test</li>
             <ul>
                 <li>Normality Test for Numeric features
                     <p>
-                    Firstly, Numeric features of the dataset were separated then skewness of numeric features were calculated with is observed to be in the valid skewness range of [-1, 1]
-                    <img src= "documentation\images\data_cleaning\numeric_skewness.png" alt = "Skewness of numeric features" width = "200">
+                    Firstly, Numeric features of the dataset were separated then skewness of numeric features were calculated with is observed to be in the valid skewness range of [-1, 1]<br>
+                    <img src= "documentation\images\data_cleaning\numeric_skewness.png" alt = "Skewness of numeric features" width = "500">
                     </p>
                 </li>
                 <li>Normality Test for Categorical features<br>
                     <p>Then, unique values of the remaining categorical features were identified resulting two values of each categorical features as shown below.<br>
-                    <img src= "documentation\images\data_cleaning\unique_categorical_data.png" alt = "Unique data of categorical features" width = "200"><br>
+                    <img src= "documentation\images\data_cleaning\unique_categorical_data.png" alt = "Unique data of categorical features" width = "500"><br>
                     So, Label encoding was performed and stored in a different dataframe as not to encode data during cleaning process. Then the skewness of the categorical data was also performed which is also observed to be in appropriate skewness range as shown below.<br>
-                    <img src= "documentation\images\data_cleaning\categorical_skewness.png" alt = "Skewness fo categorical features" width = "200">
+                    <img src= "documentation\images\data_cleaning\categorical_skewness.png" alt = "Skewness fo categorical features" width = "500">
                     </p>
                     </li>
             </ul>
@@ -33,7 +33,7 @@
     <ol>
         <li>After loading dataset, label encoding is performed for the categorical features.</li>
         <li>Features correlation is calculated and visualized as.<br>
-            <img src= "documentation\images\model_training\correlation_matrix.png" alt = "Heatmap of Correlation matrix" width = "200"><br>
+            <img src= "documentation\images\model_training\correlation_matrix.png" alt = "Heatmap of Correlation matrix" width = "500"><br>
             <p>From above correlation matrix high correlation is observed between multiple features listed below:</p>
             <ul>
                 <li>income_annum</li>
@@ -57,7 +57,7 @@
             </ul>
         <li>Normality test<br>
             <p>Skewness is calculated to check for entire features and the dataset is observed to be in feasible range of skewness[-1,1] for normal distribution.<br>
-            <img src= "documentation\images\model_training\normality_test.png" alt = "Normality test" width = "200">
+            <img src= "documentation\images\model_training\normality_test.png" alt = "Normality test" width = "500">
             </p>
         </li>
         <li>Standardization
